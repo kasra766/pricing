@@ -1,0 +1,15 @@
+.pointer {
+  cursor: pointer;
+}
+.bg {
+  background-color: rgb(175, 175, 175);
+}
+.borderBottom {
+  border-bottom: 1px solid #dee2e6;
+}
+
+@media screen and (min-width: 767px) {
+  .borderBottom {
+    border-bottom: none;
+  }
+}

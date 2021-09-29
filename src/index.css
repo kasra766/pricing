@@ -1,0 +1,22 @@
+:root {
+  --background: rgb(245, 245, 245);
+  --second-color: rgb(51, 129, 218);
+  --thrid-color: rgb(12, 131, 12);
+  --thrid-color-hover: rgb(8, 105, 8);
+}
+
+body {
+  background-color: var(--background) !important;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

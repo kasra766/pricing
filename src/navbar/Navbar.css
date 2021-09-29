@@ -1,0 +1,14 @@
+.btn-sign {
+  border: 1px rgb(180, 180, 180) solid;
+  border-radius: 20px;
+}
+.btn-sign:hover {
+  background-color: var(--thrid-color);
+  color: white !important;
+}
+.btn-sign:active {
+  background-color: var(--thrid-color-hover);
+}
+.btn-active {
+  background-color: var(--thrid-color-hover);
+}

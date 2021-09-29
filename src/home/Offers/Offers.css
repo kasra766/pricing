@@ -1,0 +1,18 @@
+.small {
+  font-size: 1rem;
+}
+/* button.btn.btn-primary {
+  display: none; /*value will change via javascript. setting the value to "" removes this attribute.*/
+ */
+.transition {
+  transition: 0.1s !important;
+}
+.background {
+  background-color: var(--second-color);
+}
+.backgroundBtn {
+  background-color: var(--thrid-color);
+}
+.arrowToggler{
+  transform: rotate(180deg);
+}

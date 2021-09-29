@@ -1,0 +1,86 @@
+{
+  "feature" : [
+    { 
+      "header": "Grow your audience", 
+      "feature":[
+        {
+          "name": "Manage subscribers",
+          "toggleText": "some text",
+          "colomn": [ "Up to 1,000" , "250,000" , "250,000" ],
+          "id": 1
+        },
+        {
+          "name": "Create landing pages",
+          "toggleText": "some text",
+          "colomn": [ "Unlimited" , "Unlimited" , "Unlimited" ],
+          "id": 2
+        },
+        {
+          "name": "Create sales pages",
+          "toggleText": "some text",
+          "colomn": [ "Unlimited" , "Unlimited" , "Unlimited" ],
+          "id": 3
+        },
+        {
+          "name": "Customizable domain",
+          "toggleText": "some text",
+          "colomn": [ true , true , true ],
+          "id": 4
+        },
+        {
+          "name": "Unlimited traffic",
+          "toggleText": "some text",
+          "colomn": [ true , true , true ],
+          "id": 5
+        }
+      ]
+    },
+    {
+      "header": "Connect with your audience",
+      "feature":[
+        {
+          "name": "Create landing pages",
+          "toggleText": "some text",
+          "colomn": [ "Unlimited" , "Unlimited" , "Unlimited" ],
+          "id": 6
+        },
+        {
+          "name": "Customizable domain",
+          "toggleText": "some text",
+          "colomn": [ false , true , true ],
+          "id": 7
+        },
+        {
+          "name": "Edit links in sent broadcasts",
+          "toggleText": "some text",
+          "colomn": [ false , false , true ],
+          "id": 8
+        }
+      ]
+    },
+    {
+      "header": "Get support",
+      "feature":[
+        {
+          "name": "Creator community access",
+          "toggleText": "some text",
+          "colomn": [ true , true , true ],
+          "id": 9
+        },
+        {
+          "name": "Creator community access",
+          "toggleText": "some text",
+          "colomn": [ "Basic Support" , "Priority Support" , "Premium Support" ],
+          "id": 10
+        }
+      ]
+    }
+  ],
+  "inputValue":{
+    "min":"0",
+    "max":"500000",
+    "step":"1000",
+    "leftSide":"0",
+    "rightSide":"500k"
+  }
+}
