@@ -7,14 +7,14 @@ import Home from "./home/Home";
 const Body = () => (
   <div>
     <Switch>
-      <Route path="/home">
-        <Home />
-      </Route>
       <Route path="/signUp">
         <SignUp />
       </Route>
       <Route path="/login">
         <Login />
+      </Route>
+      <Route path="/">
+        <Home />
       </Route>
     </Switch>
   </div>

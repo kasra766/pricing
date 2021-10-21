@@ -2,7 +2,7 @@ import React from "react";
 const Login = () => {
   return (
     <div className="d-flex justify-content-center mt-5">
-      <div className="card w-50" data-aos="flip-left">
+      <div className="card w-50 shadow" data-aos="flip-left">
         <div className="card-body">
           <div className="card-title text-center">Login</div>
           <div className="form-floating mb-3">

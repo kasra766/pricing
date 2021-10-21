@@ -15,7 +15,7 @@ const Navbar = () => {
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="/navbarTogglerDemo02"
+            data-bs-target="#navbarTogglerDemo02"
             aria-controls="navbarTogglerDemo02"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -24,27 +24,27 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul className="navbar-nav ms-auto mb-2 mb-md-0 flex-column-reverse flex-md-row-reverse">
-              <li className="nav-item ms-2">
+              <li className="nav-item ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link btn-sign"
+                  className="nav-link btn-sign text-center"
                   activeClassName="btn-active text-light"
                   to="/signUp"
                 >
                   Sign up free
                 </NavLink>
               </li>
-              <li className="nav-item ms-2">
+              <li className="nav-item ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link rounded"
+                  className="nav-link rounded ps-2 ps-md-0"
                   activeClassName="btn-active text-light"
                   to="/login"
                 >
                   Log in
                 </NavLink>
               </li>
-              <li className="nav-item dropdown ms-2">
+              <li className="nav-item dropdown ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link dropdown-toggle rounded"
+                  className="nav-link dropdown-toggle rounded ps-2 ps-md-0"
                   activeClassName="btn-active text-light"
                   to="/resources"
                   id="navbarScrollingDropdown"
@@ -69,18 +69,18 @@ const Navbar = () => {
                   </NavLink>
                 </div>
               </li>
-              <li className="nav-item ms-2">
+              <li className="nav-item ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link rounded"
+                  className="nav-link rounded ps-2 ps-md-0"
                   activeClassName="btn-active text-light"
                   to="/home"
                 >
                   Pricing
                 </NavLink>
               </li>
-              <li className="nav-item dropdown ms-2">
+              <li className="nav-item dropdown ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link dropdown-toggle rounded"
+                  className="nav-link dropdown-toggle rounded ps-2 ps-md-0"
                   activeClassName="btn-active text-light"
                   to="/features"
                   id="navbarScrollingDropdown2"
