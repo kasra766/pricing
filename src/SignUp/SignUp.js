@@ -20,7 +20,7 @@ const SignUp = () => {
   };
   return (
     <div className="d-flex justify-content-center mt-3">
-      <div className="card w-75 shadow">
+      <div className="card w-75 shadow" data-aos="flip-left">
         <div className="card-body ">
           <h3 className="card-title text-center mb-5">Sign Up</h3>
           <form className="row" onSubmit={handleSubmit(onsubmit)}>

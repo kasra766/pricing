@@ -1,14 +1,9 @@
-.transition{
-    transition: 0.1s !important;
-  }
+
   .bg{
     background-color: rgb(175, 175, 175);
   }
   .pointer{
     cursor: pointer;
-  }
-  .small {
-    font-size: 1rem;
   }
   .dash{
     margin: 1rem auto;

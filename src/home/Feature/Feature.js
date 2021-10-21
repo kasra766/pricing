@@ -16,7 +16,7 @@ const Feature = () => {
     `Seriously, totally free for up to 1,000 subscribers`
   );
   const [allState, setState] = useState({
-    arrow: <i className="fas fa-chevron-down fa-sm transition" id="arrow"></i>,
+    arrow: <i class="fas fa-chevron-down fa-sm"></i>,
     toggle: true,
     rounded: "rounded",
   });
@@ -25,7 +25,20 @@ const Feature = () => {
 
   ////////////////////////////function/////////////////////////
   const handleArrow = () => {
-    document.querySelector("#arrow").classList.toggle("arrowToggler");
+    setToggle(!toggle);
+    if (toggle) {
+      setState({
+        ...allState,
+        arrow: <i class="fas fa-chevron-up text-light"></i>,
+        rounded: "rounded-top",
+      });
+    } else {
+      setState({
+        ...allState,
+        arrow: <i class="fas fa-chevron-down fa-sm"></i>,
+        rounded: "rounded",
+      });
+    }
   };
   ///////////////////////////render//////////////////////
   return (
@@ -44,25 +57,29 @@ const Feature = () => {
       <div className="container-fluid collapse transition" id="collapseFeature">
         <div className="row ">
           <div className="d-none d-md-block col-6 border p-3"></div>
-          <div className=" col-4 col-md-2 border p-3 fw-bold">
-            <h4 className="mb-2">Free</h4>
-            <h2 className=" mb-1 text-muted">
+          <div className=" col-4 col-md-2 border p-3">
+            <h4 className="mb-3 fs-4">Free</h4>
+            <h2 className="mb-1 fs-5 text-muted ">
               $0
-              <small className="small">/month</small>
+              <small className="fs-6 d-block d-md-inline">/month</small>
             </h2>
           </div>
-          <div className=" col-4 col-md-2 border p-3">
-            <h4 className="mb-2">Creator</h4>
-            <h2 className=" mb-1 mt-3 fs-5">
+          <div className="col-4 col-md-2 border p-3">
+            <h4 className="mb-3 fs-4">Creator</h4>
+            <h2 className="mb-1 fs-5 text-wrap">
               ${priceForCreator}
-              <small className="small text-muted">/month</small>
+              <small className="fs-6 text-muted d-block d-md-inline">
+                /month
+              </small>
             </h2>
           </div>
           <div className=" col-4 col-md-2 border p-3">
-            <h4 className="mb-2">Creator Pro</h4>
-            <h2 className=" mb-1 mt-3 fs-5">
+            <h4 className="mb-3 fs-4 text-truncate">Creator Pro</h4>
+            <h2 className="mb-1 fs-5">
               ${priceForCreator - 100}
-              <small className="small text-muted">/month</small>
+              <small className="fs-6 text-muted d-block d-md-inline">
+                /month
+              </small>
             </h2>
           </div>
         </div>

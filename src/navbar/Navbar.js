@@ -46,7 +46,7 @@ const Navbar = () => {
                 <NavLink
                   className="nav-link dropdown-toggle rounded"
                   activeClassName="btn-active text-light"
-                  to="/"
+                  to="/resources"
                   id="navbarScrollingDropdown"
                   role="button"
                   data-bs-toggle="dropdown"
