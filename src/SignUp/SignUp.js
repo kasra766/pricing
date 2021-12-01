@@ -7,23 +7,22 @@ const SignUp = () => {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
     trigger,
     watch,
     setValue,
   } = useForm();
   const password = useRef();
   password.current = watch("password");
-  const onsubmit = (data) => {
-    console.log(data);
-    reset();
-  };
+  // const onsubmit = (data) => {
+  //   console.log(data);
+  //   reset();
+  // };
   return (
     <div className="d-flex justify-content-center mt-3">
       <div className="card w-75 shadow" data-aos="flip-left">
         <div className="card-body ">
           <h3 className="card-title text-center mb-5">Sign Up</h3>
-          <form className="row" onSubmit={handleSubmit(onsubmit)}>
+          <form className="row" onSubmit={handleSubmit((d) => console.log(d))}>
             <div className="col-md-6 mb-3 form-floating">
               <input
                 type="text"
@@ -68,10 +67,7 @@ const SignUp = () => {
                     message: "Invalid email address",
                   },
                 })}
-                onKeyUp={() => {
-                  trigger("email");
-                }}
-                onChange={(e)=>setValue("email",e.target.value.trim())}
+                onChange={(e) => setValue("email", e.target.value.trim())}
                 placeholder="name@example.com"
                 id="email"
               />
@@ -98,9 +94,6 @@ const SignUp = () => {
                     message: "password must be 8 charcter or more",
                   },
                 })}
-                onKeyUp={() => {
-                  trigger("password");
-                }}
                 onChange={(e) => setValue("password", e.target.value.trim())}
                 placeholder="Password"
                 id="password"
@@ -120,9 +113,6 @@ const SignUp = () => {
                   required: true,
                   validate: (value) => value === password.current,
                 })}
-                onKeyUp={() => {
-                  trigger("passwordConfrim");
-                }}
                 onChange={(e) =>
                   setValue("passwordConfrim", e.target.value.trim())
                 }

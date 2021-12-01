@@ -35,7 +35,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link rounded ps-2 ps-md-0"
+                  className="nav-link rounded px-2"
                   activeClassName="btn-active text-light"
                   to="/login"
                 >
@@ -44,7 +44,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link dropdown-toggle rounded ps-2 ps-md-0"
+                  className="nav-link dropdown-toggle rounded px-2"
                   activeClassName="btn-active text-light"
                   to="/resources"
                   id="navbarScrollingDropdown"
@@ -54,24 +54,30 @@ const Navbar = () => {
                 >
                   Resources
                 </NavLink>
-                <div
+                <ul
                   className="dropdown-menu"
                   aria-labelledby="navbarScrollingDropdown"
                 >
-                  <NavLink className="dropdown-item" to="/">
-                    NavLink 1
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/">
-                    NavLink 2
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/">
-                    NavLink 3
-                  </NavLink>
-                </div>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      NavLink 1
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      NavLink 2
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      NavLink 3
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
               <li className="nav-item ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link rounded ps-2 ps-md-0"
+                  className="nav-link rounded px-2"
                   activeClassName="btn-active text-light"
                   to="/home"
                 >
@@ -80,7 +86,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item dropdown ms-2 mb-2 mb-md-0">
                 <NavLink
-                  className="nav-link dropdown-toggle rounded ps-2 ps-md-0"
+                  className="nav-link dropdown-toggle rounded px-2"
                   activeClassName="btn-active text-light"
                   to="/features"
                   id="navbarScrollingDropdown2"
@@ -90,20 +96,26 @@ const Navbar = () => {
                 >
                   Features
                 </NavLink>
-                <div
+                <ul
                   className="dropdown-menu"
                   aria-labelledby="navbarScrollingDropdown2"
                 >
-                  <NavLink className="dropdown-item" to="/">
-                    Features 1
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/">
-                    Features 2
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/">
-                    Features 3
-                  </NavLink>
-                </div>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      Features 1
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      Features 2
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink className="dropdown-item" to="#">
+                      Features 3
+                    </NavLink>
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
